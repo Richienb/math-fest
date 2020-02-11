@@ -1,13 +1,9 @@
+const mathFest = require(".")
 const test = require("ava")
-const theModule = require(".")
+const forOwn = require("for-own")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
+	forOwn(mathFest, (val) => {
+		t.is(typeof val, "number")
 	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
 })

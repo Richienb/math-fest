@@ -1,41 +1,41 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Math Fest [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/math-fest/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/math-fest)
 
-My awesome module.
+A collection of mathematical constants.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/math-fest.png)](https://npmjs.com/package/math-fest)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install math-fest
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const { pi, e, golden } = require("math-fest");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+console.log(pi);
+//=> 3.141592653589793
+
+console.log(e);
+//=> 2.718281828459045
+
+console.log(golden);
+//=> 1.618033988749895
 ```
 
-## API
+## API - Available constants
 
-### theModule(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+- `pi` - Archimedes' constant
+- `e` - Euler's number
+- `root2` - Pythagoras' constant √2
+- `a` - The Feigenbaum constant α
+- `o` - The Feigenbaum constant δ
+- `ay` - Apéry's constant
+- `golden` - The golden ratio
+- `em` - The Euler–Mascheroni constant
+- `cw` - Conway's constant
+- `kh` - Khinchin's constant
+- `gk` - The Glaisher–Kinkelin constant
+- `ch` - Chaitin's constant
